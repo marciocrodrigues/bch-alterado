@@ -1,0 +1,50 @@
+#firmware {
+    padding: 10px;
+    position: relative;
+    margin: 5px;
+}
+
+.showAll {
+    position: absolute;
+    right: 17px;
+    top: 40px;
+    z-index: 5;
+    user-select: none;
+}
+
+.showAll input {
+    cursor: pointer;
+}
+
+.showAll label {
+    cursor: pointer;
+    margin-left: 2px;
+}
+
+.firmwareSelect {
+    margin-right: 80px;
+}
+
+.openDialogBtn {
+    position: absolute;
+    right: -14px;
+    top: 36px;
+    cursor: pointer;
+    z-index: 5;
+}
+
+.firmware-detail img {
+    max-height: 250px;
+    max-width: 100%;
+}
+
+.firmware-detail .media img {
+    max-height: 180px;
+    max-width: 100%;
+}
+
+
+.firmware-detail .media video {
+    max-height: 180px;
+    max-width: 100%;
+}

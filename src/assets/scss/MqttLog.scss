@@ -1,0 +1,165 @@
+$bottomLog: 260px;
+
+#mqttlog {
+    padding: 10px;
+    width: 100%;
+    .highlightedMessages {
+        position: absolute;
+        top: 10px;
+        right: 10px;
+        left: 10px;
+        ul {
+            padding: 5px;
+            margin: 0px;
+        }
+        &>ul {
+            margin: 0px;
+            padding-left: 5px;
+            padding-right: 5px;
+            justify-content: space-between;
+        }
+        & li {
+            margin: 2px 0 0 0;
+            display: flex;
+            align-items: center;
+            .ConsoleButton {
+                margin-left: auto;
+            }
+        }
+        .fa {
+            cursor: pointer;
+        }
+        border: 2px solid gray;
+        background-color: white;
+    }
+    .messagesLog {
+        border-radius: 0px;
+        overflow-y: auto;
+        position: absolute;
+        top: 10px;
+        bottom: $bottomLog;
+        right: 10px;
+        left: 10px;
+        border: 2px solid gray;
+        min-height: 100px;
+        ul {
+            padding: 5px;
+            margin: 0px;
+        }
+        &>ul {
+            margin: 0px;
+            padding-left: 5px;
+            padding-right: 5px;
+            justify-content: space-between;
+        }
+        & li {
+            margin: 2px 0 0 0;
+            display: flex;
+            align-items: center;
+            .ConsoleButton {
+                margin-left: auto;
+            }
+        }
+        .fa {
+            cursor: pointer;
+        }
+    }
+
+    .btnClear {
+        position: absolute;
+        bottom: $bottomLog - 30px;
+        right: 10px;
+    }
+
+    .subTable {
+        border: 2px solid gray;
+        border-radius: 0px;
+        overflow-y: auto;
+        height: 60px;
+        &>ul {
+            margin: 1px;
+            padding-left: 5px;
+            padding-right: 5px;
+            justify-content: space-between;
+        }
+        & li {
+            margin: 2px 0 0 0;
+            display: flex;
+            align-items: center;
+            .ConsoleButton {
+                margin-left: auto;
+            }
+        }
+        .fa {
+            cursor: pointer;
+        }
+    }
+    .bottomLog {
+        position: absolute;
+        bottom: 0px;
+        width: 100%;
+        padding: 10px;
+        margin: 0 -10px 0 -10px;
+    }
+    hr {
+        margin: 0px;
+        border-color: #333;
+    }
+    /*Sldier */
+    /* The switch - the box around the slider */
+    .switch {
+        position: relative;
+        display: inline-block;
+        width: 60px;
+        height: 34px;
+    }
+    /* Hide default HTML checkbox */
+    .switch input {
+        display: none;
+    }
+    /* The slider */
+    .slider {
+        position: absolute;
+        cursor: pointer;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        background-color: #ccc;
+        -webkit-transition: .4s;
+        transition: .4s;
+    }
+    .slider:before {
+        position: absolute;
+        content: "";
+        height: 26px;
+        width: 26px;
+        left: 4px;
+        bottom: 4px;
+        background-color: white;
+        -webkit-transition: .4s;
+        transition: .4s;
+    }
+    input:checked+.slider {
+        background-color: #2196F3;
+    }
+    input:focus+.slider {
+        box-shadow: 0 0 1px #2196F3;
+    }
+    input:checked+.slider:before {
+        -webkit-transform: translateX(26px);
+        -ms-transform: translateX(26px);
+        transform: translateX(26px);
+    }
+    /* Rounded sliders */
+    .slider.round {
+        border-radius: 34px;
+    }
+    .slider.round:before {
+        border-radius: 50%;
+    }
+
+    .btn {
+        min-width: 140px;
+    }
+}
